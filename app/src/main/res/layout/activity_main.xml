@@ -114,79 +114,41 @@
             app:layout_row="3"
             app:srcCompat="@drawable/uc" />
 
+
         <ImageView
             android:id="@+id/imageView0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:layout_column="0"
-            app:layout_row="4"
-            app:srcCompat="@drawable/sifir" />
-
-
-        <ImageView
-            android:id="@+id/imageView00"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             app:layout_column="1"
             app:layout_row="4"
-            app:srcCompat="@drawable/nokta" />
+            app:srcCompat="@drawable/sifir" />
 
         <ImageView
             android:id="@+id/imageViewSilme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:layout_column="2"
+            app:layout_column="3"
             app:layout_row="4"
             app:srcCompat="@drawable/silme" />
 
-
         <ImageView
-            android:id="@+id/imageViewB"
+            android:id="@+id/imageViewToplama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             app:layout_column="3"
             app:layout_row="0"
-            app:srcCompat="@drawable/bolme" />
-
-
-        <ImageView
-            android:id="@+id/imageViewC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:layout_column="3"
-            app:layout_row="1"
-            app:srcCompat="@drawable/carpma" />
+            app:srcCompat="@drawable/toplama" />
 
         <ImageView
-            android:id="@+id/imageViewT"
+            android:id="@+id/imageViewEsittir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             app:layout_column="3"
             app:layout_row="2"
-            app:srcCompat="@drawable/toplama" />
-
-        <ImageView
-            android:id="@+id/imageViewCi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:layout_column="3"
-            app:layout_row="3"
-            app:srcCompat="@drawable/cikarma" />
-
-        <ImageView
-            android:id="@+id/imageViewE"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:layout_column="3"
-            app:layout_row="4"
             app:srcCompat="@drawable/esittir" />
 
 
@@ -199,7 +161,6 @@
         android:layout_marginBottom="16dp"
         android:background="@color/white"
         android:gravity="center"
-        android:text="HOŞGELDİNİZ :)"
         android:textColor="@color/black"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"

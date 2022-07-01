@@ -6,13 +6,12 @@ import com.busrayalcin.hesapmakinesiodevi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    var girilenSayi = 0
+    private var girilenSayi = 0
     var toplam = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         binding.imageView0.setOnClickListener {
             if (girilenSayi > 0){
@@ -42,14 +41,69 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.imageView3.setOnClickListener {
-            girilenSayi = 3
+            if (girilenSayi > 0){
+                girilenSayi = (girilenSayi * 10) + 3
+            }else{
+                girilenSayi = 3
+            }
+            binding.textViewSonuc.text = "$girilenSayi"
         }
 
         binding.imageView4.setOnClickListener {
-
+            if (girilenSayi > 0){
+                girilenSayi = (girilenSayi * 10) + 4
+            }else{
+                girilenSayi = 4
+            }
+            binding.textViewSonuc.text = "$girilenSayi"
         }
 
-        binding.imageViewT.setOnClickListener {
+        binding.imageView5.setOnClickListener {
+            if (girilenSayi > 0){
+                girilenSayi = (girilenSayi * 10) + 5
+            }else{
+                girilenSayi = 5
+            }
+            binding.textViewSonuc.text = "$girilenSayi"
+        }
+
+        binding.imageView6.setOnClickListener {
+            if (girilenSayi > 0){
+                girilenSayi = (girilenSayi * 10) + 6
+            }else{
+                girilenSayi = 6
+            }
+            binding.textViewSonuc.text = "$girilenSayi"
+        }
+
+        binding.imageView7.setOnClickListener {
+            if (girilenSayi > 0){
+                girilenSayi = (girilenSayi * 10) + 7
+            }else{
+                girilenSayi = 7
+            }
+            binding.textViewSonuc.text = "$girilenSayi"
+        }
+
+        binding.imageView8.setOnClickListener {
+            if (girilenSayi > 0){
+                girilenSayi = (girilenSayi * 10) + 8
+            }else{
+                girilenSayi = 8
+            }
+            binding.textViewSonuc.text = "$girilenSayi"
+        }
+
+        binding.imageView9.setOnClickListener {
+            if (girilenSayi > 0){
+                girilenSayi = (girilenSayi * 10) + 9
+            }else{
+                girilenSayi = 9
+            }
+            binding.textViewSonuc.text = "$girilenSayi"
+        }
+
+        binding.imageViewToplama.setOnClickListener {
             toplam += girilenSayi
             girilenSayi = 0
             binding.textViewSonuc.text = "$toplam"
@@ -64,6 +118,12 @@ class MainActivity : AppCompatActivity() {
         binding.imageViewSilme.setOnClickListener {
             girilenSayi = (girilenSayi - (girilenSayi % 10)) / 10
             binding.textViewSonuc.text = "$girilenSayi"
+        }
+
+        binding.imageViewEsittir.setOnClickListener {
+            toplam += girilenSayi
+            girilenSayi = 0
+            binding.textViewSonuc.text = "$toplam"
         }
     }
 }
